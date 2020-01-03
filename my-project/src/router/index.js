@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Diretivas from '@/components/Diretivas'
 import Loops from '@/components/Loops'
 import Loops2 from '@/components/Loops2'
+import Event from '@/components/Event'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/loops2',
       name: 'Loops2',
       component: Loops2
+    },
+    {
+      path: '/event',
+      name: 'Event',
+      component: Event
     }
   ]
 })

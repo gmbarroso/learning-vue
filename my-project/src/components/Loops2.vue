@@ -5,7 +5,8 @@
 
     <br/>
 
-    <button v-on:click="alterarNome()"> <!-- Trabalhando com o onClick com o click normal do html -->
+    <!-- <button v-on:click="alterarNome()"> Trabalhando com o onClick com o click normal do html -->
+    <button @click="alterarNome()"> <!-- Posso usar o @ no lugar do v-on: -->
       Alterar nome
     </button>
 
