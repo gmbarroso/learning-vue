@@ -27,7 +27,7 @@ export default {
       srcImg: '../assets/logo.png',
       titleImg: 'X-men Group',
       outroTexto: 'Outro texto',
-      // textoDigitado: ''
+      textoDigitado: ''
     }
   },
   methods: {
