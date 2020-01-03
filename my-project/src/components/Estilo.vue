@@ -1,12 +1,23 @@
 <template>
-  <div class="event">
-    <input type="text" v-model="textoDigitado" v-on:keyup.enter="alterarNome()">
+  <div class="estilo">
+    <input
+      type="text"
+      v-model="textoDigitado"
+      v-on:keyup.enter="alterarNome()"
+    >
     <br/>
-    <button type="submit" @click="alterarNome()">
-      adicionar Nome
+    <button
+      type="submit"
+      @click="alterarNome()"
+    >
+      Adicionar Nome
     </button>
     <ul>
-      <li v-for="item in array" v-bind:key="item">
+      <li
+        v-for="item in array"
+        v-bind:key="item"
+        @click="ativarAlerta($event)"
+      >
         {{ item }}
       </li>
     </ul>
@@ -15,7 +26,7 @@
 
 <script>
 export default {
-  name: 'Bind',
+  name: 'Estilo',
   data () { // Lembra o funcionanmento de state do React
     return {
       textoDigitado: '',
@@ -26,6 +37,9 @@ export default {
     alterarNome () {
       this.array.push(this.textoDigitado)
       this.textoDigitado = ''
+    },
+    ativarAlerta (event) {
+      alert(event.target.textContent.trim())
     }
   }
 }
@@ -35,7 +49,7 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
-.event {
+.estilo {
   display: flex;
   /* justify-content: space-between;
   align-items: center; */

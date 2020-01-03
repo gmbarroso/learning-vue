@@ -6,6 +6,7 @@ import Loops from '@/components/Loops'
 import Loops2 from '@/components/Loops2'
 import Event from '@/components/Event'
 import Bind from '@/components/Bind'
+import Estilo from '@/components/Estilo'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/bind',
       name: 'Bind',
       component: Bind
+    },
+    {
+      path: '/estilo',
+      name: 'Estilo',
+      component: Estilo
     }
   ]
 })
