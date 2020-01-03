@@ -5,6 +5,7 @@ import Diretivas from '@/components/Diretivas'
 import Loops from '@/components/Loops'
 import Loops2 from '@/components/Loops2'
 import Event from '@/components/Event'
+import Bind from '@/components/Bind'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/event',
       name: 'Event',
       component: Event
+    },
+    {
+      path: '/bind',
+      name: 'Bind',
+      component: Bind
     }
   ]
 })
